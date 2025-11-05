@@ -26,11 +26,18 @@ public class Program {
 			System.out.println(sAll);
 		}
 		
+		/*
 		System.out.println("\n********** TEST 4 => seller insert **********");
 		Seller newSeller = new Seller(null, "Liliana D", "liliana@gmail.com", new Date(), 4000., department);
 		sellerDao.insert(newSeller);
 		System.out.println("New Seller inserted: " + newSeller.getId());
-
+		*/
+		
+		System.out.println("\n********** TEST 5 => seller update **********");
+		seller = sellerDao.findById(1);
+		seller.setName("Amanda A");
+		sellerDao.update(seller);
+		System.out.println(sellerDao.findById(1));
 		
 		// System.out.println(DaoFactory.createSellerDao().findById(8));
 		
