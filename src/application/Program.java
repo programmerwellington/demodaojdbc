@@ -18,5 +18,11 @@ public class Program {
 			System.out.println(s);
 		}
 		
+		List<Seller> listAll = sellerDao.findAll();
+		System.out.println("\n********** TEST 3 => seller findAll **********");
+		for (Seller sAll : listAll) {
+			System.out.println(sAll);
+		}
+		
 	}
 }
