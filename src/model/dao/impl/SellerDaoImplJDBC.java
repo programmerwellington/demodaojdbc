@@ -145,7 +145,7 @@ public class SellerDaoImplJDBC implements SellerDao {
 					"from seller " +
 					"inner join department " +
 					"on seller.DepartmentId = department.Id " +
-					"order by Name ");
+					"order by Name");
 			
 			rs = st.executeQuery();
 			
@@ -183,7 +183,7 @@ public class SellerDaoImplJDBC implements SellerDao {
 					"inner join department " +
 					"on seller.DepartmentId = department.Id " +
 					"where DepartmentId = ? " +
-					"order by Name ");
+					"order by Name");
 			
 			st.setInt(1, department.getId());
 			
